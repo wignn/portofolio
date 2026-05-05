@@ -77,7 +77,7 @@
 	<div class="animate-blob animation-delay-2000 absolute bottom-[20%] left-[5%] h-[600px] w-[600px] rounded-full bg-indigo-600/10 opacity-50 blur-[120px]"></div>
 	<div class="animate-blob animation-delay-4000 absolute left-[40%] top-[40%] h-[400px] w-[400px] rounded-full bg-emerald-600/10 opacity-40 blur-[100px]"></div>
 
-	<div class="container relative z-10 mx-auto px-4 py-12 pt-28">
+	<div class="container relative z-10 mx-auto px-4 py-8 pt-24 md:py-12 md:pt-28">
 		<div class="mx-auto max-w-7xl">
 			
 			<!-- HERO SECTION -->
@@ -95,7 +95,7 @@
 							Available for new opportunities
 						</div>
 
-						<h1 class="text-5xl font-extrabold tracking-tight text-white md:text-7xl leading-tight">
+						<h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-7xl leading-tight">
 							I'm <br/>
 							<span class="bg-gradient-to-br from-slate-100 via-cyan-200 to-indigo-400 bg-clip-text text-transparent">{profileData.name}</span>.
 						</h1>
@@ -105,10 +105,10 @@
 						</p>
 						<p class="max-w-md leading-relaxed text-slate-400 text-sm">{profileData.bio}</p>
 
-						<div class="flex flex-wrap gap-4 pt-4">
+						<div class="flex flex-col sm:flex-row flex-wrap gap-4 pt-4 w-full">
 							<Button
 								onclick={scrollToProjects}
-								class="cursor-pointer rounded-xl bg-cyan-500 text-slate-950 font-bold px-6 py-3 hover:bg-cyan-400 transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(6,182,212,0.4)] flex items-center justify-center"
+								class="w-full sm:w-auto cursor-pointer rounded-xl bg-cyan-500 text-slate-950 font-bold px-6 py-3 hover:bg-cyan-400 transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(6,182,212,0.4)] flex items-center justify-center"
 							>
 								<Code2 class="mr-2 h-4 w-4" />
 								Explore Projects
@@ -116,7 +116,7 @@
 
 							<Button
 								onclick={scrollToAbout}
-								class="cursor-pointer rounded-xl border border-white/10 bg-white/5 px-6 py-3 font-semibold text-white hover:bg-white/10 hover:border-white/20 transition-all hover:scale-105"
+								class="w-full sm:w-auto cursor-pointer rounded-xl border border-white/10 bg-white/5 px-6 py-3 font-semibold text-white hover:bg-white/10 hover:border-white/20 transition-all hover:scale-105 flex items-center justify-center"
 							>
 								System Status
 							</Button>
@@ -153,27 +153,27 @@
 
 				<div class="grid grid-cols-1 lg:grid-cols-4 gap-4 sm:gap-6">
 					<!-- Top Row: Server Monitor (Full Width) -->
-					<div class="lg:col-span-4" use:reveal={{ delay: '100ms' }}>
+					<div class="lg:col-span-4 min-w-0" use:reveal={{ delay: '100ms' }}>
 						<ServerInfoCard />
 					</div>
 
 					<!-- Column 1 & 2: Wide Cards -->
-					<div class="lg:col-span-2 flex flex-col gap-4 sm:gap-6" use:reveal={{ delay: '200ms' }}>
+					<div class="lg:col-span-2 flex flex-col gap-4 sm:gap-6 min-w-0" use:reveal={{ delay: '200ms' }}>
 						<ProjectMonitorCard />
 						<TechStackCard />
 					</div>
 
-					<div class="lg:col-span-1 flex flex-col gap-4 sm:gap-6" use:reveal={{ delay: '300ms' }}>
+					<div class="lg:col-span-1 flex flex-col gap-4 sm:gap-6 min-w-0" use:reveal={{ delay: '300ms' }}>
 						<WeeklyActivity />
 						<DiscordActivityCard lanyard={lanyard.data} />
 					</div>
 
-					<div class="lg:col-span-1 flex flex-col gap-4 sm:gap-6" use:reveal={{ delay: '400ms' }}>
+					<div class="lg:col-span-1 flex flex-col gap-4 sm:gap-6 min-w-0" use:reveal={{ delay: '400ms' }}>
 						<GitHubStatsCard />
 						<SpotifyCard lanyard={lanyard.data} />
 					</div>
 
-					<div class="lg:col-span-4" use:reveal={{ delay: '500ms' }}>
+					<div class="lg:col-span-4 min-w-0" use:reveal={{ delay: '500ms' }}>
 						<GitHubContributionGraph username={profileData.github} />
 					</div>
 				</div>
@@ -209,7 +209,7 @@
 									</div>
 								</div>
 								
-								<div class="flex flex-col flex-1 p-6">
+								<div class="flex flex-col flex-1 p-5 sm:p-6 min-w-0">
 									<h3 class="mb-2 text-xl font-bold text-slate-100 group-hover:text-cyan-400 transition-colors duration-300">
 										{project.title}
 									</h3>
