@@ -65,7 +65,7 @@ export const projects: Project[] = [
 		title: 'fio ',
 		description:
 			'A multifunctional Discord bot featuring real-time forex news, live price tracking, and customizable alerts.',
-		url: 'https://fio.wign.cloud',
+		url: 'https://fio.wign.dev',
 		localImage: '/fio.png',
 		github: 'https://github.com/wignn/atlsd',
 		tags: ['rust', 'go', 'Typescript', 'websocket', 'redis', 'docker', 'CI/CD'],
