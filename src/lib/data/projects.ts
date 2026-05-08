@@ -36,7 +36,7 @@ export const projects: Project[] = [
 		url: 'https://github.com/wignn/nhive-mobile/releases',
 		github: 'https://github.com/wignn/nhive-mobile',
 		localImage: '/nhive-mobile.jpg',
-		tags: ['Flutter', 'Dart', 'Android', 'Firebase'],
+		tags: ['Flutter', 'Dart', 'Android', 'Firebase', 'CI/CD'],
 		badge: { text: 'Android APK', color: 'purple' },
 		action: { text: 'Download APK', icon: 'download' }
 	},
@@ -62,13 +62,25 @@ export const projects: Project[] = [
 		action: { text: 'View Demo', icon: 'external' }
 	},
 	{
-		title: 'Discord Bot',
+		title: 'fio ',
 		description:
-			'A multifunctional Discord bot featuring music playback, real-time forex news, live price tracking, and customizable alerts.',
-		url: 'https://forex.wign.cloud',
-		localImage: '/bot-discord.png',
-		github: 'https://github.com/wignn/bot-discordd',
-		tags: ['rust', 'go', 'javaScript', 'lavalink', 'serenity', 'websocket'],
+			'A multifunctional Discord bot featuring real-time forex news, live price tracking, and customizable alerts.',
+		url: 'https://fio.wign.cloud',
+		localImage: '/fio.png',
+		github: 'https://github.com/wignn/atlsd',
+		tags: ['rust', 'go', 'Typescript', 'websocket', 'redis', 'docker', 'CI/CD'],
+		badge: { text: 'Website', color: 'blue' },
+		action: { text: 'Visit Website', icon: 'external' }
+	},
+	
+	{
+		title: 'lyra',
+		description:
+			'A multifunctional Discord bot featuring play music.',
+		url: 'https:/lyra.wign.dev',
+		localImage: '/lyra.png',
+		github: 'https://github.com/wignn/lyra',
+		tags: ['rust', 'lavalink', 'serenity', 'docker', 'CI/CD'],
 		badge: { text: 'Website', color: 'blue' },
 		action: { text: 'Visit Website', icon: 'external' }
 	}
