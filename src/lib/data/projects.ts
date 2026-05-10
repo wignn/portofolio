@@ -77,7 +77,7 @@ export const projects: Project[] = [
 		title: 'lyra',
 		description:
 			'A multifunctional Discord bot featuring play music.',
-		url: 'https:/lyra.wign.dev',
+		url: 'https://lyra.wign.dev',
 		localImage: '/lyra.png',
 		github: 'https://github.com/wignn/lyra',
 		tags: ['rust', 'lavalink', 'serenity', 'docker', 'CI/CD'],
