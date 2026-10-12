@@ -448,15 +448,18 @@ function stopPresence() {
 
 function renderWaka(response) {
   const data = response.data || response;
-  if (data.human_readable_total) {
+  const languages = (data.languages || []).slice(0, 4);
+  const total = data.human_readable_total || data.totalTime;
+  const average = data.dailyAverage;
+
+  if (total && languages.length) {
     $("waka-content").innerHTML =
-      `<div class="waka-total">${esc(data.human_readable_total)}</div><p class="muted">${esc(data.range?.text || "Coding time")}</p>` +
-      (data.languages || [])
-        .slice(0, 4)
-        .map(
-          (language) =>
-            `<div class="language"><div class="language-label"><span>${esc(language.name)}</span><span>${Number(language.percent || 0).toFixed(1)}%</span></div><div class="bar"><div style="width:${Math.min(100, Math.max(0, Number(language.percent) || 0))}%"></div></div></div>`,
-        )
+      `<div class="waka-total">${esc(total)}</div><p class="muted">${esc(data.range?.text || (average ? `Daily average ${average}` : "Coding time"))}</p>` +
+      languages
+        .map((language) => {
+          const percent = Number(language.percent ?? language.percentage) || 0;
+          return `<div class="language"><div class="language-label"><span>${esc(language.name)}</span><span>${percent.toFixed(1)}%</span></div><div class="bar"><div style="width:${Math.min(100, Math.max(0, percent))}%"></div></div></div>`;
+        })
         .join("");
   } else if (Array.isArray(data)) {
     const numeric = data.filter((item) =>
