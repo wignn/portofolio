@@ -1,0 +1,4 @@
+@import "tailwindcss/theme.css";
+@import "tailwindcss/utilities.css";
+
+/* Skip Tailwind preflight to preserve the original portfolio's exact rendering. */
