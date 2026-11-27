@@ -1,5 +1,5 @@
 <footer>
-  <span>© <span id="year"></span> Wign</span><span
-    >Indonesia <span class="mint">↗</span></span
-  ><a href="/">Back to top ↑</a>
+	<span>© <span id="year"></span> Wign / Developer &amp; technical architect</span><span
+		>Indonesia</span
+	><a href="#main">Back to top</a>
 </footer>
