@@ -41,7 +41,7 @@ export function createArchitectureScene(host, motion) {
 	let outerRing;
 	scene.add(group);
 	group.rotation.set(userPitch, userYaw, 0);
-	group.position.x = 0.2;
+	group.position.x = 0.65;
 
 	function own(resource) {
 		resources.add(resource);
@@ -227,8 +227,8 @@ export function createArchitectureScene(host, motion) {
 		if (!rect.width || !rect.height) return;
 		renderer.setSize(rect.width, rect.height, false);
 		camera.aspect = rect.width / rect.height;
-		camera.position.set(0, 9.6, rect.width < 520 ? 21.5 : 17.8);
-		camera.lookAt(0, -0.05, 0.1);
+		camera.position.set(0, 9.8, rect.width < 520 ? 22 : 18.2);
+		camera.lookAt(0, 0.1, 0.1);
 		camera.updateProjectionMatrix();
 		render();
 	}
