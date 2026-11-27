@@ -15,7 +15,7 @@ const entries = [
 		featured: false,
 		category: 'Desktop market research',
 		description:
-			'A desktop market research workspace bringing charts, watchlists, news, an economic calendar, and local Kronos Forecast research together through PIA SDK.',
+			'Desktop market research with charts, watchlists, news, economic calendar, and Kronos Forecast.',
 		technologies: ['PIA SDK', 'Desktop application', 'Kronos Forecast'],
 		links: [
 			{ label: 'Website', href: 'https://orca.wign.dev/' },
@@ -28,7 +28,7 @@ const entries = [
 		featured: false,
 		category: 'Event-driven backend',
 		description:
-			'Market data, news, and analytics brought together in an event-driven platform, with REST and real-time WebSocket delivery.',
+			'Event-driven market data, news, and analytics platform with REST and real-time WebSocket delivery.',
 		technologies: ['Rust', 'NATS JetStream', 'ClickHouse', 'WebSocket'],
 		links: [
 			{ label: 'Open terminal', href: 'https://terminal.wign.dev/' },
@@ -68,7 +68,7 @@ const entries = [
 		featured: false,
 		category: 'Server management',
 		description:
-			'A Discord server management workspace for publishing panels, configuring moderation and automation, and reviewing audit trails and community insights. Built with a Next.js dashboard, NestJS orchestration, and Rust services.',
+			'Discord server management workspace with Next.js dashboard, NestJS orchestration, and Rust services.',
 		technologies: ['Next.js', 'NestJS', 'Rust', 'gRPC'],
 		links: [
 			{ label: 'Website', href: 'https://hazard.wign.dev/' },
@@ -81,7 +81,7 @@ const entries = [
 		featured: false,
 		category: 'Game service storefront',
 		description:
-			'A game service storefront with game-specific catalogues, service packages, pricing, and WhatsApp ordering for account-care and progression services.',
+			'Game service storefront with catalogues, packages, transparent pricing, and WhatsApp ordering.',
 		technologies: [],
 		links: [{ label: 'Live website', href: 'https://www.david-booster-service.my.id/' }]
 	},
@@ -100,7 +100,7 @@ const entries = [
 		featured: false,
 		category: 'Developer tooling',
 		description:
-			'TypeScript and Python clients for market-data APIs, real-time subscriptions, authentication, and typed errors.',
+			'TypeScript and Python clients for market-data APIs, real-time streams, auth, and typed errors.',
 		technologies: ['TypeScript', 'Python', 'REST', 'WebSocket'],
 		links: [
 			{ label: 'npm', href: 'https://www.npmjs.com/package/@piaa/sdk' },
